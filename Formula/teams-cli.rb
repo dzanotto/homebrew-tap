@@ -2,6 +2,8 @@ class TeamsCli < Formula
   desc "Control Microsoft Teams calls through macOS Accessibility"
   homepage "https://github.com/dzanotto/teams-cli"
 
+  license "MIT"
+
   bottle do
     root_url "https://github.com/dzanotto/homebrew-tap/releases/download/teams-cli-0.1.1"
     sha256 cellar: :any_skip_relocation, arm64_tahoe: "052fa13377499f228ff165eada0b2a0b58b26cf7bbbd4979888fb8b9acca52f9"
@@ -14,8 +16,6 @@ class TeamsCli < Formula
     url "https://github.com/dzanotto/teams-cli/releases/download/v0.1.1/teams-cli-v0.1.1-macos-x86_64.tar.gz"
     sha256 "e49b1bd550d85ad4e733ea9f0c0fb38b26ba9d8b982df31e5a70bbb29896c453"
   end
-
-  license "MIT"
 
   depends_on macos: :ventura
 
