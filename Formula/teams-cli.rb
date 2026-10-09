@@ -4,6 +4,11 @@ class TeamsCli < Formula
 
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/dzanotto/homebrew-tap/releases/download/teams-cli-0.1.3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "9372f1417ac899b49602e800f0f5f221ba8e152a929986a0af2cfec7e5384f86"
+  end
+
   if Hardware::CPU.arm?
     url "https://github.com/dzanotto/teams-cli/releases/download/v0.1.3/teams-cli-v0.1.3-macos-arm64.tar.gz"
     sha256 "e3407fa370e11b8f4ad1d10cd3ef373854bc259ea62bb9a2b0987175807b59b3"
