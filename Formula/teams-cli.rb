@@ -4,17 +4,12 @@ class TeamsCli < Formula
 
   license "MIT"
 
-  bottle do
-    root_url "https://github.com/dzanotto/homebrew-tap/releases/download/teams-cli-0.1.4"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "127d1135c6a25d3c7d1027b6924a3567397246f1543039a1cdf177f958e44569"
-  end
-
   if Hardware::CPU.arm?
-    url "https://github.com/dzanotto/teams-cli/releases/download/v0.1.4/teams-cli-v0.1.4-macos-arm64.tar.gz"
-    sha256 "96d207d31a11a3d322545eec3dd83bc15f4f72d1cec2eb4fb2b1ba728e903a15"
+    url "https://github.com/dzanotto/teams-cli/releases/download/v0.1.5/teams-cli-v0.1.5-macos-arm64.tar.gz"
+    sha256 "1f12c021b5a46d81854d5423dedd712be45a969c58da6b8f9e8f98ee271ca077"
   else
-    url "https://github.com/dzanotto/teams-cli/releases/download/v0.1.4/teams-cli-v0.1.4-macos-x86_64.tar.gz"
-    sha256 "e084523170d6a862a51e956bab1b28b21a050589413e84c0ac16edb9d4d904f0"
+    url "https://github.com/dzanotto/teams-cli/releases/download/v0.1.5/teams-cli-v0.1.5-macos-x86_64.tar.gz"
+    sha256 "b3483b11fbd4aecb146d049290b30704d2ee133e1783ceaa29ae4a29b00bdcb7"
   end
 
   depends_on macos: :ventura
